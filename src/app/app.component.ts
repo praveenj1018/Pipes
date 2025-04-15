@@ -1,12 +1,21 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'practice';
+  name: string = 'praveen kumar';
+  today: Date = new Date();
+  price: number = 12345.6789;
+  percentage: number = 0.75;
+  fruits: string[] = ['apple', 'banana', 'mango', 'orange'];
+  user = {
+    name: 'Praveen',
+    role: 'developer'
+  };
 }
+
+
+
+
